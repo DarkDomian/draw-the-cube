@@ -1,9 +1,8 @@
 {
-    "functions": {
-      "api/triangulation.ts": {
-        "memory": 128,
-        "maxDuration": 10
-      }
+  "functions": {
+    "api/triangulation.ts": {
+      "memory": 1024,
+      "maxDuration": 10
     }
   }
-  
+}

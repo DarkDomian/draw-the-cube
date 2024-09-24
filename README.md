@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Draw The Cube
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web applicaion for generate 3D representation of cuboid based on the intered data.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **react-three/fiber**: A React renderer for Three.js, enabling 3D graphics in React.
+- **Vite**: A build tool that offers a faster and leaner development experience.
+- **Vercel**: A platform for deploying frontend applications with serverless functions.
+- **Ant Design (AntD)**: A UI component library for responsive design.
+  
+## Features
 
-## Expanding the ESLint configuration
+- User input form to calculate cuboid dimensions.
+- 3D rendering of the cuboid based on user input.
+- Responsive design with Ant Design components.
+- Light and dark theme support.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Before running the project, ensure you have the following installed:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [Docker](https://www.docker.com/get-started)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Local Deployment with Docker
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/your-username/your-repo-name.git
+  cd your-repo-name
+  ```
+2. Build the Docker image:
+
+  ```bash
+  Copy code
+  docker build -t your-app-name .
+  ```
+3. Start the Docker container:
+  ```bash
+  Copy code
+  docker run -p 3000:3000 your-app-name
+  ```
+4. Open your browser and go to http://localhost:3000 to view the application.
+
+### Local Deployment without Docker
+
+
+
+## Acknowledgments
+- Thanks to the developers of the libraries and tools used in this project.
+- Special thanks to the team for their support and feedback.
