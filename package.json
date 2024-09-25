@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
-    "preview": "vercel dev",
-    "start": "tsc -b && vite build && vercel dev"
+    "type-check": "tsc -p tsconfig.json --noEmit",
+    "start": "vercel dev"
   },
   "dependencies": {
     "@react-three/fiber": "^8.17.7",
