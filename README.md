@@ -13,13 +13,13 @@ Web application for generating a 3D representation of a cuboid based on the ente
 </div>
 
 ## 📦 Installation
-To get started with cubedraw, you can either use **Docker** or run it locally:
+To get started with cubedraw, you can run it locally with **npm**:
 
 <!-- ### Using Docker
 1. Pull the Docker image `docker pull darkdomian/cubedraw`.
 2. Run the container `docker run -p 3000:3000 darkdomian/cubedraw`. -->
 
-### Running Locally with npm
+<!-- ### Running Locally with npm -->
 1. Clone the repository `git clone https://github.com/DarkDomian/draw-the-cube.git`.
 2. Run `npm install` to install the dependencies.
 3. Start the application with `npm start`.
